@@ -491,4 +491,1069 @@ def apply(metric):
     m.tags["Name"] = "Alarm3 Bit 15"
     metrics.append(m)   
 
+ if "Alarm01" in metric.fields: 
+  data = metric.fields.pop("Alarm01")
+
+  if data != 0:
+   bitval = data >> 1 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 1
+    m.tags["ID"] = "106"
+    m.tags["Level"] = "Warning"
+    m.tags["Name"] = "Abnormal String 1"
+    m.tags["Cause"] = "1"
+    metrics.append(m)   
+
+   bitval = data >> 2 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 1
+    m.tags["ID"] = "107"
+    m.tags["Level"] = "Warning"
+    m.tags["Name"] = "Abnormal String 2"
+    m.tags["Cause"] = "1"
+    metrics.append(m)   
+
+   bitval = data >> 3 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 1
+    m.tags["ID"] = "108"
+    m.tags["Level"] = "Warning"
+    m.tags["Name"] = "Abnormal String 3"
+    m.tags["Cause"] = "1"
+    metrics.append(m)   
+
+   bitval = data >> 4 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 1
+    m.tags["ID"] = "109"
+    m.tags["Level"] = "Warning"
+    m.tags["Name"] = "Abnormal String 4"
+    m.tags["Cause"] = "1"	
+    metrics.append(m)   
+
+   bitval = data >> 5 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 1
+    m.tags["ID"] = "110"
+    m.tags["Level"] = "Warning"
+    m.tags["Name"] = "Abnormal String 5"
+    m.tags["Cause"] = "1"	
+    metrics.append(m)   
+
+   bitval = data >> 6 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 1
+    m.tags["ID"] = "111"
+    m.tags["Level"] = "Warning"
+    m.tags["Name"] = "Abnormal String 6"
+    m.tags["Cause"] = "1"	
+    metrics.append(m)   
+
+   bitval = data >> 10 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 1
+    m.tags["ID"] = "504"
+    m.tags["Level"] = "Minor"
+    m.tags["Name"] = "Software Ver. Unmatch"
+    m.tags["Cause"] = "1"	
+    metrics.append(m)   
+
+   bitval = data >> 12 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 1
+    m.tags["ID"] = "505"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Upgrade Failed"
+    m.tags["Cause"] = "1"	
+    metrics.append(m)   
+
+   bitval = data >> 13 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 1
+    m.tags["ID"] = "61440"
+    m.tags["Level"] = "Minor"
+    m.tags["Name"] = "Flash Fault"
+    m.tags["Cause"] = "1"	
+    metrics.append(m)   
+
+   bitval = data >> 14 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 1
+    m.tags["ID"] = "506"
+    m.tags["Level"] = "Warning"
+    m.tags["Name"] = "License Expired"
+    m.tags["Cause"] = "1"	
+    metrics.append(m)   
+
+  data = metric.fields.pop("Alarm02")
+  if data != 0:
+   bitval = data >> 1 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 2
+    m.tags["ID"] = "504"
+    m.tags["Level"] = "Minor"
+    m.tags["Name"] = "Software Ver. Unmatch"
+    m.tags["Cause"] = "2"	
+    metrics.append(m)   
+
+   bitval = data >> 2 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 2
+    m.tags["ID"] = "504"
+    m.tags["Level"] = "Minor"
+    m.tags["Name"] = "Software Ver. Unmatch"
+    m.tags["Cause"] = "3"	
+    metrics.append(m)   
+
+   bitval = data >> 3 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 2
+    m.tags["ID"] = "400"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "System Fault"
+    m.tags["Cause"] = "1"	
+    metrics.append(m)   
+
+   bitval = data >> 4 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 2
+    m.tags["ID"] = "400"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "System Fault"
+    m.tags["Cause"] = "27"	
+    metrics.append(m)   
+
+   bitval = data >> 5 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 2
+    m.tags["ID"] = "200"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Abnormal DC Circuit"
+    m.tags["Cause"] = "16"	
+    metrics.append(m)   
+
+   bitval = data >> 6 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 2
+    m.tags["ID"] = "202"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Abnormal Inv. Circuit"
+    m.tags["Cause"] = "20"	
+    metrics.append(m)   
+
+   bitval = data >> 7 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 2
+    m.tags["ID"] = "318"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Abn. Residual Curr."
+    m.tags["Cause"] = "1"	
+    metrics.append(m)   
+
+   bitval = data >> 8 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 2
+    m.tags["ID"] = "321"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Overtemperature"
+    m.tags["Cause"] = "1"	
+    metrics.append(m)   
+
+   bitval = data >> 10 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 2
+    m.tags["ID"] = "400"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "System Fault"
+    m.tags["Cause"] = "28"	
+    metrics.append(m)   
+
+   bitval = data >> 11 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 2
+    m.tags["ID"] = "320"
+    m.tags["Level"] = "Minor"
+    m.tags["Name"] = "Fan Fault"
+    m.tags["Cause"] = "1"	
+    metrics.append(m)   
+
+   bitval = data >> 12 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 2
+    m.tags["ID"] = "322"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Abnormal SPI Comm."
+    m.tags["Cause"] = "1"	
+    metrics.append(m)   
+
+   bitval = data >> 14 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 2
+    m.tags["ID"] = "400"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "System Fault"
+    m.tags["Cause"] = "29"	
+    metrics.append(m)   
+
+  data = metric.fields.pop("Alarm03")
+  if data != 0:
+   bitval = data & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 3
+    m.tags["ID"] = "313"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Low Insulation Resistance"
+    m.tags["Cause"] = "1"		
+    metrics.append(m)
+
+   bitval = data >> 1 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 3
+    m.tags["ID"] = "411"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "AFCI Self-Check Failure"
+    m.tags["Cause"] = "1"		
+    metrics.append(m)   
+
+   bitval = data >> 2 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 3
+    m.tags["ID"] = "412"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "DC Arc Fault"
+    m.tags["Cause"] = "1"		
+    metrics.append(m)   
+
+   bitval = data >> 3 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 3
+    m.tags["ID"] = "411"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "AFCI Self-Check Failure"
+    m.tags["Cause"] = "2"		
+    metrics.append(m)   
+
+   bitval = data >> 4 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 3
+    m.tags["ID"] = "411"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "AFCI Self-Check Failure"
+    m.tags["Cause"] = "3"		
+    metrics.append(m)   
+
+   bitval = data >> 5 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 3
+    m.tags["ID"] = "202"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Abnormal Inv. Circuit"
+    m.tags["Cause"] = "21"		
+    metrics.append(m)   
+
+   bitval = data >> 7 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 3
+    m.tags["ID"] = "400"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "System Fault"
+    m.tags["Cause"] = "30"		
+    metrics.append(m)   
+
+   bitval = data >> 8 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 3
+    m.tags["ID"] = "400"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "System Fault"
+    m.tags["Cause"] = "31"		
+    metrics.append(m)   
+
+   bitval = data >> 9 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 3
+    m.tags["ID"] = "122"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "String 3 Reversed"
+    m.tags["Cause"] = "1"		
+    metrics.append(m)   
+
+   bitval = data >> 12 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 3
+    m.tags["ID"] = "412"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "DC Arc Fault"
+    m.tags["Cause"] = "2"		
+    metrics.append(m)   
+
+   bitval = data >> 13 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 3
+    m.tags["ID"] = "412"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "DC Arc Fault"
+    m.tags["Cause"] = "3"		
+    metrics.append(m)   
+
+   bitval = data >> 14 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 3
+    m.tags["ID"] = "412"
+    m.tags["Level"] = "Warning"
+    m.tags["Name"] = "DC Arc Fault"
+    m.tags["Cause"] = "4"		
+    metrics.append(m)   
+
+   bitval = data >> 15 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 3
+    m.tags["ID"] = "400"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "System Fault"
+    m.tags["Cause"] = "23"		
+    metrics.append(m)   
+
+  data = metric.fields.pop("Alarm04")
+  if data != 0:
+   bitval = data >> 1 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 4
+    m.tags["ID"] = "120"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "String 1 Reversed"
+    m.tags["Cause"] = "1"		
+    metrics.append(m)   
+
+   bitval = data >> 2 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 4
+    m.tags["ID"] = "121"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "String 2 Reversed"
+    m.tags["Cause"] = "1"		
+    metrics.append(m)   
+
+   bitval = data >> 3 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 4
+    m.tags["ID"] = "200"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Abnormal DC Circuit"
+    m.tags["Cause"] = "12"		
+    metrics.append(m)   
+
+   bitval = data >> 6 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 4
+    m.tags["ID"] = "123"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "String 4 Reversed"
+    m.tags["Cause"] = "1"		
+    metrics.append(m)   
+
+   bitval = data >> 7 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 4
+    m.tags["ID"] = "124"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "String 5 Reversed"
+    m.tags["Cause"] = "1"		
+    metrics.append(m)   
+
+   bitval = data >> 8 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 4
+    m.tags["ID"] = "125"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "String 6 Reversed"
+    m.tags["Cause"] = "1"		
+    metrics.append(m)   
+
+   bitval = data >> 9 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 4
+    m.tags["ID"] = "103"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "High DC Input Voltage"
+    m.tags["Cause"] = "1"		
+    metrics.append(m)   
+
+   bitval = data >> 10 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 4
+    m.tags["ID"] = "103"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "High DC Input Voltage"
+    m.tags["Cause"] = "2"		
+    metrics.append(m) 
+
+   bitval = data >> 11 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 4
+    m.tags["ID"] = "103"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "High DC Input Voltage"
+    m.tags["Cause"] = "3"		
+    metrics.append(m) 
+
+   bitval = data >> 12 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 4
+    m.tags["ID"] = "103"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "High DC Input Voltage"
+    m.tags["Cause"] = "4"		
+    metrics.append(m) 
+
+   bitval = data >> 15 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 4
+    m.tags["ID"] = "200"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Abnormal DC Circuit"
+    m.tags["Cause"] = "15"		
+    metrics.append(m) 
+
+  data = metric.fields.pop("Alarm05")
+  if data != 0:
+   bitval = data >> 2 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 5
+    m.tags["ID"] = "120"
+    m.tags["Level"] = "Warning"
+    m.tags["Name"] = "String 1 Reversed"
+    m.tags["Cause"] = "2"		
+    metrics.append(m)   
+
+   bitval = data >> 3 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 5
+    m.tags["ID"] = "121"
+    m.tags["Level"] = "Warning"
+    m.tags["Name"] = "String 2 Reversed"
+    m.tags["Cause"] = "2"		
+    metrics.append(m)   
+
+   bitval = data >> 4 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 5
+    m.tags["ID"] = "126"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "String 7 Reversed"
+    m.tags["Cause"] = "1"		
+    metrics.append(m) 
+
+   bitval = data >> 5 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 5
+    m.tags["ID"] = "126"
+    m.tags["Level"] = "Warning"
+    m.tags["Name"] = "String 7 Reversed"
+    m.tags["Cause"] = "2"		
+    metrics.append(m) 	
+
+   bitval = data >> 6 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 5
+    m.tags["ID"] = "127"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "String 8 Reversed"
+    m.tags["Cause"] = "1"		
+    metrics.append(m)   
+
+   bitval = data >> 7 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 5
+    m.tags["ID"] = "124"
+    m.tags["Level"] = "Warning"
+    m.tags["Name"] = "String 8 Reversed"
+    m.tags["Cause"] = "2"		
+    metrics.append(m)   
+
+   bitval = data >> 8 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 5
+    m.tags["ID"] = "413"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Abnormal PV String Connection"
+    m.tags["Cause"] = "1"		
+    metrics.append(m)   
+
+   bitval = data >> 9 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 5
+    m.tags["ID"] = "413"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Abnormal PV String Connection"
+    m.tags["Cause"] = "2"		
+    metrics.append(m)   
+
+   bitval = data >> 10 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 5
+    m.tags["ID"] = "413"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Abnormal PV String Connection"
+    m.tags["Cause"] = "3"		
+    metrics.append(m) 
+
+   bitval = data >> 11 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 5
+    m.tags["ID"] = "413"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Abnormal PV String Connection"
+    m.tags["Cause"] = "4"		
+    metrics.append(m) 
+
+   bitval = data >> 12 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 5
+    m.tags["ID"] = "122"
+    m.tags["Level"] = "Warning"
+    m.tags["Name"] = "String 3 Reversed"
+    m.tags["Cause"] = "2"		
+    metrics.append(m) 
+
+   bitval = data >> 13 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 5
+    m.tags["ID"] = "123"
+    m.tags["Level"] = "Warning"
+    m.tags["Name"] = "String 4 Reversed"
+    m.tags["Cause"] = "2"		
+    metrics.append(m) 
+
+   bitval = data >> 14 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 5
+    m.tags["ID"] = "124"
+    m.tags["Level"] = "Warning"
+    m.tags["Name"] = "String 5 Reversed"
+    m.tags["Cause"] = "2"		
+    metrics.append(m) 
+
+   bitval = data >> 15 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 5
+    m.tags["ID"] = "125"
+    m.tags["Level"] = "Warning"
+    m.tags["Name"] = "String 6 Reversed"
+    m.tags["Cause"] = "2"		
+    metrics.append(m) 
+
+  data = metric.fields.pop("Alarm06")
+  if data != 0:
+   bitval = data >> 1 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 6
+    m.tags["ID"] = "200"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Abnormal DC Circuit"
+    m.tags["Cause"] = "3"		
+    metrics.append(m)   
+
+   bitval = data >> 2 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 6
+    m.tags["ID"] = "410"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Abn. Auxiliary Power"
+    m.tags["Cause"] = "4"		
+    metrics.append(m)   
+
+   bitval = data >> 4 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 6
+    m.tags["ID"] = "200"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Abnormal DC Circuit"
+    m.tags["Cause"] = "10"		
+    metrics.append(m) 
+
+   bitval = data >> 5 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 6
+    m.tags["ID"] = "200"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Abnormal DC Circuit"
+    m.tags["Cause"] = "11"		
+    metrics.append(m) 	
+
+   bitval = data >> 6 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 6
+    m.tags["ID"] = "200"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Abnormal DC Circuit"
+    m.tags["Cause"] = "30"		
+    metrics.append(m)   
+
+   bitval = data >> 7 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 6
+    m.tags["ID"] = "414"
+    m.tags["Level"] = "Warning"
+    m.tags["Name"] = "BST Inductor Cable Connection Abnormal"
+    m.tags["Cause"] = "1"		
+    metrics.append(m)   
+
+   bitval = data >> 8 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 6
+    m.tags["ID"] = "414"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "BST Inductor Cable Connection Abnormal"
+    m.tags["Cause"] = "2"		
+    metrics.append(m)   
+
+   bitval = data >> 9 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 6
+    m.tags["ID"] = "414"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "BST Inductor Cable Connection Abnormal"
+    m.tags["Cause"] = "3"		
+    metrics.append(m)   
+
+  data = metric.fields.pop("Alarm07")
+  if data != 0:
+   bitval = data >> 6 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 7
+    m.tags["ID"] = "400"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "System Fault"
+    m.tags["Cause"] = "3"		
+    metrics.append(m)   
+
+   bitval = data >> 10 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 7
+    m.tags["ID"] = "202"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Abnormal Inv. Circuit"
+    m.tags["Cause"] = "13"		
+    metrics.append(m)   
+
+   bitval = data >> 12 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 7
+    m.tags["ID"] = "202"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Abnormal Inv. Circuit"
+    m.tags["Cause"] = "14"		
+    metrics.append(m) 
+
+  data = metric.fields.pop("Alarm08")
+  if data != 0:
+   bitval = data >> 1 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 8
+    m.tags["ID"] = "202"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Abnormal Inv. Circuit"
+    m.tags["Cause"] = "16"		
+    metrics.append(m)   
+
+   bitval = data >> 5 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 8
+    m.tags["ID"] = "202"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "System Fault"
+    m.tags["Cause"] = "21"
+    metrics.append(m) 
+
+  data = metric.fields.pop("Alarm09")
+  if data != 0:
+   bitval = data & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 9
+    m.tags["ID"] = "301"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Abnormal Grid Voltage"
+    m.tags["Cause"] = "4"		
+    metrics.append(m)   
+
+   bitval = data >> 3 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 9
+    m.tags["ID"] = "301"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Abnormal Grid Voltage"
+    m.tags["Cause"] = "16"		
+    metrics.append(m)   
+
+   bitval = data >> 6 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 9
+    m.tags["ID"] = "305"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Abnormal Grid Frequency"
+    m.tags["Cause"] = "2"		
+    metrics.append(m)   
+
+   bitval = data >> 7 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 9
+    m.tags["ID"] = "305"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Abnormal Grid Frequency"
+    m.tags["Cause"] = "4"		
+    metrics.append(m)   
+
+   bitval = data >> 8 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 9
+    m.tags["ID"] = "301"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Abnormal Grid Voltage"
+    m.tags["Cause"] = "28"		
+    metrics.append(m)   
+
+   bitval = data >> 9 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 9
+    m.tags["ID"] = "301"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Abnormal Grid Voltage"
+    m.tags["Cause"] = "29"		
+    metrics.append(m)   
+
+   bitval = data >> 10 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 9
+    m.tags["ID"] = "326"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Abnormal Grounding"
+    m.tags["Cause"] = "1"		
+    metrics.append(m) 
+
+   bitval = data >> 11 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 9
+    m.tags["ID"] = "301"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Abnormal Grid Voltage"
+    m.tags["Cause"] = "26"		
+    metrics.append(m) 
+
+   bitval = data >> 12 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 9
+    m.tags["ID"] = "305"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Abnormal Grid Frequency"
+    m.tags["Cause"] = "5"		
+    metrics.append(m) 
+
+  data = metric.fields.pop("Alarm10")
+  if data != 0:
+   bitval = data & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 10
+    m.tags["ID"] = "301"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Abnormal Grid Voltage"
+    m.tags["Cause"] = "31"		
+    metrics.append(m)   
+
+   bitval = data >> 1 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 10
+    m.tags["ID"] = "301"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Abnormal Grid Voltage"
+    m.tags["Cause"] = "32"		
+    metrics.append(m)   
+
+   bitval = data >> 2 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 10
+    m.tags["ID"] = "301"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Abnormal Grid Voltage"
+    m.tags["Cause"] = "33"		
+    metrics.append(m)    
+
+   bitval = data >> 8 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 10
+    m.tags["ID"] = "301"
+    m.tags["Level"] = "Major"
+    m.tags["Name"] = "Abnormal Grid Voltage"
+    m.tags["Cause"] = "19"		
+    metrics.append(m)   
+
+  data = metric.fields.pop("Alarm17")
+  if data != 0:
+   bitval = data & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 17
+    m.tags["ID"] = "106"
+    m.tags["Level"] = "Warning"
+    m.tags["Name"] = "Abnormal String 1"
+    m.tags["Cause"] = "1"		
+    metrics.append(m)   
+
+   bitval = data >> 1 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 17
+    m.tags["ID"] = "107"
+    m.tags["Level"] = "Warning"
+    m.tags["Name"] = "Abnormal String 2"
+    m.tags["Cause"] = "1"		
+    metrics.append(m)   
+
+   bitval = data >> 2 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 17
+    m.tags["ID"] = "108"
+    m.tags["Level"] = "Warning"
+    m.tags["Name"] = "Abnormal String 3"
+    m.tags["Cause"] = "1"		
+    metrics.append(m)
+	
+   bitval = data >> 3 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 17
+    m.tags["ID"] = "109"
+    m.tags["Level"] = "Warning"
+    m.tags["Name"] = "Abnormal String 4"
+    m.tags["Cause"] = "1"		
+    metrics.append(m)
+	
+   bitval = data >> 4 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 17
+    m.tags["ID"] = "110"
+    m.tags["Level"] = "Warning"
+    m.tags["Name"] = "Abnormal String 5"
+    m.tags["Cause"] = "1"		
+    metrics.append(m)
+	
+   bitval = data >> 5 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 17
+    m.tags["ID"] = "111"
+    m.tags["Level"] = "Warning"
+    m.tags["Name"] = "Abnormal String 6"
+    m.tags["Cause"] = "1"		
+    metrics.append(m)
+	
+   bitval = data >> 6 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 17
+    m.tags["ID"] = "112"
+    m.tags["Level"] = "Warning"
+    m.tags["Name"] = "Abnormal String 7"
+    m.tags["Cause"] = "1"		
+    metrics.append(m)
+	
+   bitval = data >> 7 & 1
+   if bitval == 1:
+    m = deepcopy(metric)    
+    m.fields.clear()
+    m.fields["Alarm"] = 17
+    m.tags["ID"] = "113"
+    m.tags["Level"] = "Warning"
+    m.tags["Name"] = "Abnormal String 8"
+    m.tags["Cause"] = "1"		
+    metrics.append(m)
+
+  data = metric.fields.pop("Alarm11")
+  data = metric.fields.pop("Alarm12")
+  data = metric.fields.pop("Alarm13")
+  data = metric.fields.pop("Alarm14")
+  data = metric.fields.pop("Alarm15")
+  data = metric.fields.pop("Alarm16")
+
  return metrics
