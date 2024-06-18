@@ -4,7 +4,7 @@ Solar Inverter Modbus Interface Definitions (Markdown):
 
 https://github.com/ebabeshko/telegraf-huawei-solar/blob/main/docs/SUN2000_Modbus_Registers.md
 
-Solar Inverter Modbus Interface Definitions (Issue 04, 2022-03-29):
+Solar Inverter Modbus Interface Definitions (Issue 05, 2023-02-16):
 
 https://github.com/ebabeshko/telegraf-huawei-solar/blob/main/docs/Solar%20Inverter%20Modbus%20Interface%20Definitions.pdf
 
