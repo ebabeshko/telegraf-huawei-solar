@@ -2224,7 +2224,7 @@ countries: Charge</p></td>
 ### Model and Firmware
 |              |                         |                                |
 |--------------|-------------------------|--------------------------------|
-| **Model ID** | **Model**               | **Earliest Firm Version**      |
+| **Model ID** | **Model**               | **Earliest Firmware Version**  |
 | 0            | SUN2000-20KTL           | SUN2000 V100R001               |
 | 1            | SUN2000-17KTL           | SUN2000 V100R001               |
 | 2            | SUN2000-15KTL           | SUN2000 V100R001               |
@@ -2360,7 +2360,7 @@ countries: Charge</p></td>
 | 411          | SUN2000-4KTL-M0         | SUN2000MA V100R001C00          |
 | 412          | SUN2000-15KTL-M0        | SUN2000MA V100R001C10          |
 | 413          | SUN2000-17KTL-M0        | SUN2000MA V100R001C10          |
-| 414          | SUN2000-20KTL-M0        | SUN2000MA V100R001C10SUN2000MA |
+| 414          | SUN2000-20KTL-M0        | SUN2000MA V100R001C10          |
 | 415          | SUN2000-8KTL            | SUN2000MA V100R001C10          |
 | 416          | SUN2000-10KTL           | SUN2000MA V100R001C10          |
 | 417          | SUN2000-12KTL           | SUN2000MA V100R001C10          |
